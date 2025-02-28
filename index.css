@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+
+}
+.nav-bar{
+    height: 5rem;
+    width: 100%;
+    background-color: #00000075;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-logo{
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin-left: 80px;
+    color: rgb(12, 182, 21);
+   cursor: pointer;
+
+}
+
+.nav-li{
+    height: 5rem;
+    width: 40%;;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+.li-items{
+    display: flex;
+    align-items: center;
+    
+  
+    
+}
+.li-items li{
+    font-size: 21px;
+    font-weight: 500;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 85px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.un {
+    display: inline-block;
+  }
+  
+  .un::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: rgb(4, 255, 21);
+    transition: 1000ms;
+  }
+  
+  .un:hover::after {
+    width: 100%;
+  }
+.btn{
+    height: 3rem;
+    width: 100px;
+    font-size: 18px;
+    background-color: transparent;
+    border:3px solid rgb(71, 247, 22);
+    border-radius: 5px;
+    margin-left: 55px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.btn:hover{
+    background-color:rgb(12, 182, 21);
+    border: none;
+    transition: 2000ms;
+}
+
+/* form */
+
+.container{
+    background-color: #a09894ad;
+    height: 60vh;
+    width: 55vh;
+    margin:auto ;
+    margin-top: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    position: absolute;
+    transform: translate(135%,0%) scale(0.01);
+    visibility: hidden;
+}
+.popup{
+    visibility: visible;
+    transform: translate(135%,0%) scale(1);
+    transition: 3000ms ;
+
+}
+.form{
+    padding: 20px;
+}
+.form h1{
+    margin-top: 15px;
+    font-size: 33px;
+    font-weight: 700;
+    color: rgb(41, 255, 64);
+}
+.input{
+    height: 3rem;
+    width: 80%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.btn-S{
+    height: 3rem;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  
+}
+.signup-btn{
+    height: 3rem;
+    width: 50%;
+    font-size: 18px;
+    background-color: rgb(16, 172, 33);
+    border-radius: 10px;
+    border: none;
+    /* margin-left: 100px; */
+    
+    cursor: pointer;
+    color: #ffffff;
+}
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .li-items li {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form h1 {
+        font-size: 28px;
+    }
+
+    .input {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .signup-btn {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        height: 500px;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Rubik", sans-serif;
+        position: relative;
+    
+    }
+    
+    .li-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .li-items li {
+        margin: 3px 0;
+    }
+
+    .btn {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+
+    .input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .signup-btn {
+        width: 70%;
+    }
+}
