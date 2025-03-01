@@ -160,6 +160,16 @@ body{
 }
   /* Responsive Design */
   @media (max-width: 768px) {
+    body{
+        height: 800px;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Rubik", sans-serif;
+        position: relative;
+    
+    }
     .nav-bar {
         flex-direction: column;
         height: auto;
@@ -207,7 +217,7 @@ body{
 
 @media (max-width: 480px) {
     body{
-        height: 500px;
+        height: 800px;
         background-image: url(img1.jpg);
         background-size: cover;
         background-position: center;
