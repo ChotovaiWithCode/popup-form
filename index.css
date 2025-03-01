@@ -105,7 +105,7 @@ body{
     border-radius: 10px;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
     position: absolute;
-    transform: translate(135%,0%) scale(0.01);
+    transform: translate(135%,0%) scale(0.01) ;
     visibility: hidden;
 }
 .popup{
@@ -196,9 +196,17 @@ body{
     }
 
     .container {
-        width: 80%;
+        width: 90%;
         height: auto;
-        padding: 20px;
+        
+        width: 84vh;
+        transform: translate(20%,-22%) scale(0.01) ;
+    }
+    .popup{
+        visibility: visible;
+        transform: translate(20%,-22%) scale(1);
+        transition: 3000ms ;
+    
     }
 
     .form h1 {
@@ -238,21 +246,28 @@ body{
     }
 
     .btn {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .container {
         width: 90%;
-        padding: 10px;
+        padding: 5px;
+        transform: translate(6%,-25%) scale(0.01) ;
+    }
+    .popup{
+        visibility: visible;
+        transform: translate(6%,-25%) scale(1);
+        transition: 3000ms ;
+    
     }
 
     .form h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .input {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 6px;
     }
 
     .signup-btn {
